@@ -21,18 +21,15 @@ func main() {
 		}
 		switch t := token.(type) {
 		case xml.StartElement:
-			elmt := xml.StartElement(t)
-			name := elmt.Name.Local
+			name := t.Name.Local
 			printElmt(name, depth)
 			depth++
 		case xml.EndElement:
 			depth--
-			elmt := xml.EndElement(t)
-			name := elmt.Name.Local
+			name := t.Name.Local
 			printElmt(name, depth)
 		case xml.CharData:
-			bytes := xml.CharData(t)
-			printElmt("\""+string([]byte(bytes))+"\"", depth)
+			printElmt("\""+string([]byte(t))+"\"", depth)
 		case xml.Comment:
 			printElmt("Comment", depth)
 		case xml.ProcInst:

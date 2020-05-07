@@ -51,8 +51,6 @@ func main() {
 		}
 		fmt.Print(string(buf[0:n]))
 	}
-
-	os.Exit(0)
 }
 
 func acceptableCharset(contentTypes []string) bool {
