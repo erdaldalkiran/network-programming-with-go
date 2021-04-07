@@ -33,7 +33,7 @@ func main() {
 		os.Exit(2)
 	}
 
-	fmt.Println("dumping reponse\n", string(b))
+	fmt.Println("dumping response\n", string(b))
 
 	contentTypes := response.Header["Content-Type"]
 	if !acceptableCharset(contentTypes) {

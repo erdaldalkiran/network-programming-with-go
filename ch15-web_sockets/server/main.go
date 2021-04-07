@@ -24,7 +24,7 @@ func Echo(ws *websocket.Conn) {
 		var receiveMsg string
 		err = websocket.Message.Receive(ws, &receiveMsg)
 		if err != nil {
-			fmt.Println("send message failed", err.Error())
+			fmt.Println("receive message failed", err.Error())
 			break
 		}
 		fmt.Println("message received:", sendMsg)

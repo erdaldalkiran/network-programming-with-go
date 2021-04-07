@@ -1,1 +1,16 @@
-{"Name":{"Family":"Tanesi","Personal":"Ciko"},"Email":[{"Kind":"personal","Address":"ciko@tanesi.com"},{"Kind":"work","Address":"tanesi@ciko.com"}]}
+{
+  "Name": {
+    "Family": "Tanesi",
+    "Personal": "Ciko"
+  },
+  "Email": [
+    {
+      "Kind": "personal",
+      "Address": "ciko@tanesi.com"
+    },
+    {
+      "Kind": "work",
+      "Address": "tanesi@ciko.com"
+    }
+  ]
+}
